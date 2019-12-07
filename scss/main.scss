@@ -1,0 +1,114 @@
+@font-face {
+    font-family: Gotham-medium; 
+    src: url(../fonts/Gotham-Medium-Regular.ttf); 
+
+    font-family: "Gotham - Book"; 
+    src: url(../fonts/GothamBook.ttf); 
+    
+    font-family: "Gotham - Bold"; 
+    src: url(../fonts/gothambold1.ttf); 
+
+    font-family: "Open-Sans"; 
+    src: url(../fonts/OpenSans-Regular.ttf);
+   }
+
+header{
+width: 100%;
+height: 800px;
+background-color: #4b4b4b;
+background-image: linear-gradient(45deg, #55b7ff 0%, #7e5aff 100%);
+}
+.top{
+    padding: 53px 215px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav{
+width: 595px;
+
+ ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    li{
+       display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        
+    .menu-mark{
+        width: 9px;
+        height: 9px;
+        border: 1px solid #ffffff;
+        border-radius: 50%;
+        
+    }
+
+       a{
+        padding-left: 14px;
+        color: #ffffff;
+        font-family: "Gotham - Book";
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 22px;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+}
+}
+}
+li:hover div{
+    background-color: #fff;
+}
+.social-media{
+    width: 162px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+.circle{
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    a{
+        margin: 0 auto;
+        color: #ffffff;
+    }
+}
+}
+
+.arrow{
+    position: absolute;
+    top: 90%;
+    left: 50%;
+}
+// **********What_we_do**************************************************
+#what_we_do{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2{
+        font-family: "Gotham - Bold";
+        font-weight: 700;
+        text-transform: uppercase;
+        position: relative;
+        margin-top: 100px;
+        padding-bottom: 60px;
+    }
+    h2:before{
+    content: '';
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    height: 2px;
+    background-color: #000;
+    margin-bottom: 35px;
+    }
+}

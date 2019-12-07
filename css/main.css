@@ -1,0 +1,159 @@
+@font-face {
+  font-family: Gotham-medium;
+  src: url(../fonts/Gotham-Medium-Regular.ttf);
+  font-family: "Gotham - Book";
+  src: url(../fonts/GothamBook.ttf);
+  font-family: "Gotham - Bold";
+  src: url(../fonts/gothambold1.ttf);
+  font-family: "Open-Sans";
+  src: url(../fonts/OpenSans-Regular.ttf);
+}
+
+header {
+  width: 100%;
+  height: 800px;
+  background-color: #4b4b4b;
+  background-image: linear-gradient(45deg, #55b7ff 0%, #7e5aff 100%);
+}
+
+.top {
+  padding: 53px 215px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav {
+  width: 595px;
+}
+
+nav ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav ul li .menu-mark {
+  width: 9px;
+  height: 9px;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+}
+
+nav ul li a {
+  padding-left: 14px;
+  color: #ffffff;
+  font-family: "Gotham - Book";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+li:hover div {
+  background-color: #fff;
+}
+
+.social-media {
+  width: 162px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.social-media .circle {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.social-media .circle a {
+  margin: 0 auto;
+  color: #ffffff;
+}
+
+.arrow {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+}
+
+#what_we_do {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#what_we_do h2 {
+  font-family: "Gotham - Bold";
+  font-weight: 700;
+  text-transform: uppercase;
+  position: relative;
+  margin-top: 100px;
+  padding-bottom: 60px;
+}
+
+#what_we_do h2:before {
+  content: '';
+  display: block;
+  margin: 0 auto;
+  width: 100px;
+  height: 2px;
+  background-color: #000;
+  margin-bottom: 35px;
+}
+/*# sourceMappingURL=main.css.map */
