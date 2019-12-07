@@ -94,15 +94,17 @@ li:hover div{
     display: flex;
     flex-direction: column;
     align-items: center;
+    .heading1{
+    margin-top: 100px;
     h2{
         font-family: "Gotham - Bold";
         font-weight: 700;
         text-transform: uppercase;
         position: relative;
-        margin-top: 100px;
+        
         padding-bottom: 60px;
     }
-    h2:before{
+    &:before{
     content: '';
     display: block;
     margin: 0 auto;
@@ -112,3 +114,30 @@ li:hover div{
     margin-bottom: 35px;
     }
 }
+}
+
+.trade-center{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .pictures{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        .blue{
+            position: absolute;
+            width: 585px;
+            height: 470px;
+            background-color: #55b7ff;
+        }
+        .pic1{
+            z-index: 2;
+            transform: translate(215px, 70px);
+        }
+    }
+    .text-content{
+        width: 460px;
+        margin-left: 300px;
+    }
+}
+
