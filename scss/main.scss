@@ -17,6 +17,7 @@
     font-family: "Open-Sans"; 
     src: url(../fonts/OpenSans-Regular.ttf);
    }
+   
 
 header{
 width: 100%;
@@ -121,17 +122,19 @@ letter-spacing: 5.4px;
 }
 // **********What_we_do**************************************************
 #what_we_do{
+  
     display: flex;
     flex-direction: column;
     align-items: center;
     .heading1{
     margin-top: 100px;
     h2{
+        font-size: 44px;
+        line-height: 24px;
         font-family: "Gotham - Bold";
         font-weight: 700;
         text-transform: uppercase;
         position: relative;
-        
         padding-bottom: 60px;
     }
     &:before{
@@ -155,19 +158,71 @@ letter-spacing: 5.4px;
         flex-direction: column;
         position: relative;
         .blue{
+            
             position: absolute;
             width: 585px;
             height: 470px;
             background-color: #55b7ff;
         }
         .pic1{
+            width: 630px;
+            height: 470px;
             z-index: 2;
-            transform: translate(215px, 70px);
+            transform: translate(260px, 70px);
         }
     }
     .text-content{
         width: 460px;
-        margin-left: 300px;
-    }
+        margin-left: 329px;
+        h4{
+            font-family: "Gotham - Book";
+            font-size: 22px;
+            font-weight: 400;
+            color: #2c4058;
+            text-transform: uppercase;
+        }
+        h2{
+            margin-top: 0px;
+            margin-bottom: 39px;
+            font-family: "Gotham - Bold";
+            font-weight: 700;
+            color: #2c4058;
+            font-size: 44px;
+            line-height: 24px;
+            text-transform: uppercase;
+            }
+            p{
+                
+                margin-top: 0px;
+                margin-bottom: 36px;
+                color: #4b5562;
+                font-family: "Open-Sans";
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 30px;
+            }
+            a{
+                margin-top: 0px;
+                margin-bottom: 60px;
+                display: inline-block;
+                padding: 20px 41px;
+                border: 1px solid black;
+                color: #2c4058;
+                font-family: "Gotham - Book";
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 22px;
+                text-transform: uppercase;
+            }
+            em{
+                color: #2c4058;
+                font-family: "Open-Sans";
+                font-size: 18px;
+                line-height: 30px;
+            }
+            
+        
+        }
+    
 }
 
