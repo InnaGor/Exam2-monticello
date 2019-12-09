@@ -1,10 +1,19 @@
 @font-face {
-  font-family: Gotham-medium;
+  font-family: "Gotham-medium";
   src: url(../fonts/Gotham-Medium-Regular.ttf);
+}
+
+@font-face {
   font-family: "Gotham - Book";
   src: url(../fonts/GothamBook.ttf);
+}
+
+@font-face {
   font-family: "Gotham - Bold";
   src: url(../fonts/gothambold1.ttf);
+}
+
+@font-face {
   font-family: "Open-Sans";
   src: url(../fonts/OpenSans-Regular.ttf);
 }
@@ -17,6 +26,8 @@ header {
 }
 
 .top {
+  position: absolute;
+  z-index: 2;
   padding: 53px 215px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -89,6 +100,7 @@ li:hover div {
 .social-media {
   width: 162px;
   height: 40px;
+  margin-left: 84px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -117,6 +129,26 @@ li:hover div {
 .social-media .circle a {
   margin: 0 auto;
   color: #ffffff;
+}
+
+.slide-text h1 {
+  color: #ffffff;
+  font-family: "Gotham-medium";
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 22px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.slide-text p {
+  color: #ffffff;
+  font-family: "Gotham - Book";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  text-transform: uppercase;
+  letter-spacing: 5.4px;
 }
 
 .arrow {
