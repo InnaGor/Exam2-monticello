@@ -1,3 +1,5 @@
+@import "./mixins.scss";
+
 @font-face {
     font-family: "Gotham-medium"; 
     src: url(../fonts/Gotham-Medium-Regular.ttf); 
@@ -126,25 +128,15 @@ letter-spacing: 5.4px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    
     .heading1{
-    margin-top: 100px;
-    h2{
-        font-size: 44px;
-        line-height: 24px;
-        font-family: "Gotham - Bold";
-        font-weight: 700;
-        text-transform: uppercase;
-        position: relative;
-        padding-bottom: 60px;
+        @include heading;
+        h2{
+        color: #2c4058;
     }
     &:before{
-    content: '';
-    display: block;
-    margin: 0 auto;
-    width: 100px;
-    height: 2px;
     background-color: #000;
-    margin-bottom: 35px;
+    @include line_before;
     }
 }
 }
@@ -153,6 +145,9 @@ letter-spacing: 5.4px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    .trade-text{
+        margin-left: 329px;
+    }
     .pictures{
         display: flex;
         flex-direction: column;
@@ -171,9 +166,11 @@ letter-spacing: 5.4px;
             transform: translate(260px, 70px);
         }
     }
+}
+
     .text-content{
         width: 460px;
-        margin-left: 329px;
+        
         h4{
             font-family: "Gotham - Book";
             font-size: 22px;
@@ -188,7 +185,6 @@ letter-spacing: 5.4px;
             font-weight: 700;
             color: #2c4058;
             font-size: 44px;
-            line-height: 24px;
             text-transform: uppercase;
             }
             p{
@@ -224,5 +220,145 @@ letter-spacing: 5.4px;
         
         }
     
+.commerce-center{
+    margin-top: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .commerce-text{
+       margin-right: 329px; 
+    }
+    .pictures{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        .purple{
+            
+            position: absolute;
+            width: 585px;
+            height: 470px;
+            background-color: #7e5aff;
+        }
+        .pic1{
+            width: 630px;
+            height: 470px;
+            z-index: 2;
+            transform: translate(-260px, 70px);
+        }
+    }
 }
 
+// ***NEWS********************************************************************
+#news{
+margin-top: 140px;
+width: 100%;
+height: 1035px;
+background-color: #ffffff;
+background-image: linear-gradient(45deg, #3c7fd4 0%, #24ccfa 100%);
+
+    .heading1{
+        @include heading;
+        h2{
+            color: #ffffff;
+        &::before{
+            background-color: white;
+            @include line_before;
+        }
+     }
+    }
+    .slider2{
+        margin: 0px 215px 309px 215px;
+.slide{
+width: 370px;
+height: 514px;
+margin: 0 15px;
+background-color: #ffffff;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+img{
+    opacity: 1;
+}
+.slide-text2{
+margin-left: 20px;
+h3{
+color: #2c4058;
+font-family: "Gotham-medium";
+font-size: 22px;
+font-weight: 700;
+line-height: 34px;
+text-transform: uppercase;
+}
+p{
+color: #4b5562;
+font-family: "Open Sans";
+font-size: 18px;
+font-weight: 400;
+line-height: 30px;
+}
+.author{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: 30px;
+    align-items: center;
+    img{
+        opacity: 1;
+         margin: 0;
+        width: 60px;
+        height: 60px;
+    }
+    .author_text{
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+        
+        h4{
+            margin: 0;
+            color: #2c4058;
+            font-family: "Gotham - Book";
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 22px;
+            text-transform: uppercase;
+        }
+        p{
+            color: #55b7ff;
+            font-family: "Gotham - Book";
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 22px;
+            margin: 0;
+                    }
+    }
+}
+// стилізувати точки, і стрілочки
+}
+}
+.slick-dots li button:before{
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    width: 9px;
+    height: 9px;
+}
+.slick-dots li.slick-active button:before{
+    color: white;
+}
+}
+
+}
+
+// ***gallery****************************************************************
+
+#gallery{
+    .heading1{
+        @include heading; 
+        h2{
+            color: #2c4058;;
+        &::before{
+            background-color: #2c4058;;
+            @include line_before;
+        }
+     }  
+    }
+}
