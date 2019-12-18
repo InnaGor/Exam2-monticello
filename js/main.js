@@ -17,7 +17,10 @@ $(() => {
         autoplaySpeed: 5000,
         dots: true,
     });
+
 });
+
+// map
 
 function initMap() {
     // The location of office
@@ -28,3 +31,13 @@ function initMap() {
     // The marker, positioned at the office
     let marker = new google.maps.Marker({ position: place, map: map });
 }
+
+$(() => {
+    $("a.scroll").on("click", function (e) {
+        e.preventDefault();
+        let target = $(this).attr('href');
+        $('html, body').animate({
+            scrollTop: $(target).offset().top
+        }, 1500);
+    });
+});
